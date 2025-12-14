@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizers - Spice It Up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1>Appetizers</h1>
+        <button id="mobile-toggle" class="mobile-toggle">☰</button>
+
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="appetizers.html">Appetizers</a>
+            <a href="main.html">Main Dishes</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="#" id="cart-button">Cart 🛒</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2 class="category-title">Appetizers</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Jollof Rice</h3>
+            <h4>Spicy, tomato-based rice cooked with vegetables, often served with chicken, beef, or fish</h4>
+            <p class="price">$22.99</p>
+            <button class="add-to-cart" data-name="Spicy, tomato-based rice cooked with vegetables, often served with chicken, beef, or fish" data-price="8.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <h3>Egusi Delight with Steamed Rice</h3>
+            Rich melon seed stew cooked with vegetables and spices, served over fluffy steamed rice.
+            <p class="price">$26.00</p>
+            <button class="add-to-cart" data-name="Egusi Delight with Steamed Rice" data-price="6.00">Add to Cart</button>
+        </div>
+         
+        <div class="menu-item">
+            <h3>Slimy Okra Delight with Fufu</h3>
+            <h4>Smooth, savory okra soup with rich flavors, served with your choice of fufu.</h4>
+            <p class="price">$24.00</p>
+            <button class="add-to-cart" data-name="Slimy Okra Delight with Fufu" data-price="6.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <h3>Ayamase Rice Combo</h3>
+            <h4>Smoky green chili stew paired with tender meat and warm rice. </h4>
+            <p class="price">$24.00</p>
+            <button class="add-to-cart" data-name="Ayamase Rice Combo" data-price="24.00">Add to Cart</button>
+        </div>
+
+    </div>
+</main>
+
+<div id="cart-modal" class="cart-modal hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="cart-total">0.00</span></h3>
+    <button id="close-cart">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

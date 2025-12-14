@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizers - Spice It Up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1>Appetizers</h1>
+        <button id="mobile-toggle" class="mobile-toggle">☰</button>
+
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="appetizers.html">Appetizers</a>
+            <a href="main.html">Main Dishes</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="#" id="cart-button">Cart 🛒</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2 class="category-title">Appetizers</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h3>🔥 Spicy Plantain Bites</h3>
+            <h4>Crispy fried plantain tossed in a bold, spicy pepper seasoning.</h4>
+            <p class="price">$8.99</p>
+            <button class="add-to-cart" data-name="Spicy Plantain Bites" data-price="8.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <h3>Crispy Shawarma Rolls</h3>
+            <h4>Golden, crispy rolls filled with seasoned chicken or beef and Nigerian spices</h4>
+            <p class="price">$8.00</p>
+            <button class="add-to-cart" data-name="Crispy Shawarma Rolls" data-price="8.00">Add to Cart</button>
+        </div>
+        
+        <div class="menu-item">
+            <h3>Spicy Assorted pepper soup</h3>
+            <h4>A hot, aromatic Nigerian pepper soup made with assorted proteins and bold spices</h4>
+            <p class="price">$10.00</p>
+            <button class="add-to-cart" data-name="Spicy Assorted Pepper soup" data-price="10.00">Add to Cart</button>
+        </div>
+    </div>
+</main>
+
+<div id="cart-modal" class="cart-modal hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="cart-total">0.00</span></h3>
+    <button id="close-cart">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

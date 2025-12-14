@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+
+  <header class="site header">
+    <div class="container">
+      <h1>Spice It Up</h1>
+      <p class = "tagline">Flavors of Meun</p>
+     
+    <button id="mobile-toggle" class="mobile-toggle">☰</button>
+   
+    <nav id="main-nav" class="main-nav">
+      
+      <a href="index.html">Home</a>
+      <a href="appetizers.html">Appetizers</a>
+      <a href="main.html">Main Dishes</a>
+      <a href="desserts.html">Desserts</a>
+      <a href="drinks.html">Drinks</a>
+      <a href="#" id="cart-button">cart</a>
+    
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="Welcome">
+    <h2>Welcome to Spice It Up! </h2>
+    <p>Explor our Rich culture of food and Diversity</p>
+  </section>
+
+  <section class="Menu preview">
+    <h2>Menu Highlights</h2>
+
+            <div class="menu-grid">
+            <div class="menu-item">
+                <h3>🔥 Spicy Plantai Bites</h3>
+                <p>Crispy bites coated in our signature spicy sauce.</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>🍛 Ayamase Rice Combo</h3>
+                <p>Smoky green chili stew paired with tender meat and warm rice. </p>
+            </div>
+
+            <div class="menu-item">
+                <h3>🍰 Velvet Cake Slice</h3>
+                <p>Moist red velvet with cream cheese frosting.</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>🥤 Tropical Hibiscus Drink</h3>
+                <p>Fresh Hibiscus blended with lime and ginger.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    // Mobile Navigation Toggle
+    const toggle = document.getElementById('mobile-toggle');
+    const nav = document.getElementById('main-nav');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", !expanded);
+    });
+</script>
+
+</body>
+</html>
+  </section>
+  </body>
+</html>

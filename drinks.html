@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizers - Spice It Up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <h1>Appetizers</h1>
+        <button id="mobile-toggle" class="mobile-toggle">☰</button>
+
+        <nav id="main-nav" class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="appetizers.html">Appetizers</a>
+            <a href="main.html">Main Dishes</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="#" id="cart-button">Cart 🛒</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2 class="category-title">Desserts</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Chapman</h3>
+            <h4>Popular Nigerian cocktail, fruity, lightly fizzy, non-alcoholic (or alcoholic)</h4>
+            <p class="price">$3.99</p>
+            <button class="add-to-cart" data-name="Chapman" data-price="3.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <h3>🥤Ice Blends Zobo</h3>
+            <h4>Chilled hibiscus drink blended with ice, often sweetened and flavored with ginger or other spices.</h4>
+            <p class="price">$5.00</p>
+            <button class="add-to-cart" data-name="Ice Blends Zobo" data-price="5.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <h3>🥤Ginger beer</h3>
+            <h4>A refreshing Nigerian ginger beer, slightly spicy and effervescent.</h4>
+            <p class="price">$5.00</p>
+            <button class="add-to-cart" data-name="Ginger beer" data-price="12.00">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <h3>🥤Hollandia</h3>
+            <h4>a creamy, fermented milk drink, slightly tangy, naturally sweet, and rich in probiotics</h4>
+            <p class="price">$6.00</p>
+            <button class="add-to-cart" data-name="Hollandia" data-price="15.00">Add to Cart</button>
+        </div>
+    </div>
+</main>
+
+<div id="cart-modal" class="cart-modal hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="cart-total">0.00</span></h3>
+    <button id="close-cart">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
