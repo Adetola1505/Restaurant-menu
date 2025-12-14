@@ -1,0 +1,1 @@
+Spice It Up is a responsive restaurant menu website built with HTML, CSS, and JavaScript. It features separate menu categories, a modern dark design, and an interactive cart system that lets users add items and view their total.
